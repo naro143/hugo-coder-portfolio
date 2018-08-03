@@ -6,5 +6,5 @@ slug = ""
 tags = []
 categories = []
 thumbnail = "{{ .Site.Params.thumbnail }}"
-description = "{{ .Summary }}"
+description = ""
 +++

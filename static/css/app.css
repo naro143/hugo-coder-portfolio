@@ -98,6 +98,10 @@ code {
   width: 32px;
 }
 
+.sp-sns-shares {
+  display: none;
+}
+
 @media (max-width: 574px) {
   .navigation .container {
     padding: 0;
@@ -111,6 +115,7 @@ code {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
     width: 100%;
     border-bottom: 1px solid #ffffff;
   }
@@ -130,6 +135,20 @@ code {
     justify-content: center;
     height: 48px;
     color: #ffffff;
+  }
+  .navigation .container .navigation-list .navigation-item .navigation-link:hover:before, .navigation .container .navigation-list .navigation-item .navigation-link:hover:after {
+    width: 0;
+  }
+
+  .pc-sns-shares {
+    display: none;
+  }
+
+  .sp-sns-shares {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 /* vBackground */
