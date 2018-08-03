@@ -3,6 +3,14 @@ title = "About Hugo"
 slug = "about"
 +++
 
+---------------------------
+This theme is created based on "hugo-coder".
+I made it possible to tell myself more by my change.  
+Please see "FeaturesOfCoderPortfolio" in the post about the change.
+Regarding other demo contents, it is hugo-coder's thing.
+
+---------------------------
+
 Hugo is a static site engine written in Go.
 
 

@@ -1,5 +1,5 @@
 +++
-date = "2017-01-08"
+date = "2018-08-03"
 title = "Theme Demo"
 math = "true"
 
@@ -72,3 +72,23 @@ var foo = function (bar) {
 
 console.log(foo(5));
 ```
+
+## Private Content  
+
+You can create private content with this short code  
+
+```
+{{% private %}}
+Write private content here
+{{% /private %}}
+```
+
+## Private Content Demo
+
+Please click on fixed bottom bar 'Click'  
+private content is displayed here  
+
+{{% private %}}
+## Private Content
+This is private content
+{{% /private %}}

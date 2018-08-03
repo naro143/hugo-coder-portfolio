@@ -11,6 +11,7 @@ canonifyurls = true
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
 
 disqusShortname = "yourdiscussshortname"
 
@@ -27,6 +28,9 @@ disqusShortname = "yourdiscussshortname"
     hideCredits = false
     hideCopyright = false
 
+    snsShare = true
+
+    thumbnail = "image/thumbnail.png"
 
     # Custom CSS
     custom_css = []

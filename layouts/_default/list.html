@@ -1,5 +1,8 @@
+{{ define "og-title" }}
+  {{ .Title }} - {{ .Site.Title }}
+{{ end }}
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
+  {{ .Title }} - {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
   {{ partial "list.html" . }}
