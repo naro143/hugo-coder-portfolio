@@ -53,7 +53,18 @@
 
     {{ template "_internal/google_analytics.html" . }}
 
-  {{ partial "facebook.html" . }}
   <script src="{{ "js/app.js" | absURL }}"></script>
+  {{ with .Site.Params.footerContentAfter }}
+  <script>
+  (function($) {
+    return $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        return $('#privateTriggerText').text("{{ . }}");
+      });
+    });
+   })(jQuery);
+  </script>
+  {{ end }}
   </body>
 </html>

@@ -3,10 +3,6 @@
 (function($) {
   return $(function() {
     var startPos, winScrollTop;
-    $('#privateTrigger').on('click', function() {
-      $('.private').slideToggle();
-      return $('#privateTriggerText').text("Thank You! Please share it if you like it→");
-    });
     startPos = 0;
     winScrollTop = 0;
     return $(window).on('scroll', function() {
