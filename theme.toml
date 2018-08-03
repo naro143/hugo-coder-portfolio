@@ -1,4 +1,4 @@
-name = "Coder"
+name = "CoderPortfolio "
 license = "MIT"
 licenselink = "https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md"
 description = "A simple and clean blog theme for Hugo"
@@ -22,5 +22,5 @@ features = [
 min_version = "0.32"
 
 [author]
-  name = "Luiz F. A. de Prá"
+  name = "Yusuke Ishimi"
   homepage = "https://luizdepra.com"
