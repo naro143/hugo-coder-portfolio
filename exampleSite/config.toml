@@ -1,7 +1,7 @@
 baseurl = "http://www.example.com"
 title = "johndoe"
 
-theme = "coder"
+theme = "coder-portfolio"
 
 languagecode = "en"
 
@@ -21,6 +21,8 @@ disqusShortname = "yourdiscussshortname"
     info = "Full Stack DevOps and Magician"
     avatarurl = "images/avatar.jpg"
     footercontent = "Enter a text here."
+    fixedbarContent = "Do you want to know me more private?→"
+    fixedbarContentAfter = "Thank You! Please share it if you like it→"
 
     hideCredits = false
     hideCopyright = false

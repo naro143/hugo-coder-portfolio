@@ -54,13 +54,13 @@
     {{ template "_internal/google_analytics.html" . }}
 
   <script src="{{ "js/app.js" | absURL }}"></script>
-  {{ with .Site.Params.footerContentAfter }}
+  {{ with .Site.Params.fixedbarContentAfter }}
   <script>
   (function($) {
-    return $(function() {
+    $(function() {
       $('#privateTrigger').on('click', function() {
         $('.private').slideToggle();
-        return $('#privateTriggerText').text("{{ . }}");
+        $('#privateTriggerText').text("{{ . }}");
       });
     });
    })(jQuery);

@@ -10,10 +10,10 @@
       winScrollTop = $(this).scrollTop();
       scrollDistance = startPos - winScrollTop;
       if (scrollDistance >= 20) {
-        $('.footer').slideDown("slow");
+        $('.fixed-bar').slideDown("slow");
         return startPos = winScrollTop;
       } else if (scrollDistance <= -20) {
-        $('.footer').slideUp("slow");
+        $('.fixed-bar').slideUp("slow");
         return startPos = winScrollTop;
       }
     });

@@ -46,15 +46,16 @@ a:hover:before, a:hover:after {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.footer {
+.fixed-bar {
   position: fixed;
   bottom: 0;
   margin: 0;
   height: 65px;
+  width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   background: #fefefe;
 }
-.footer .container {
+.fixed-bar .container {
   display: flex;
   justify-content: center;
   align-items: center;
