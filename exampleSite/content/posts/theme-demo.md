@@ -77,11 +77,12 @@ console.log(foo(5));
 
 You can create private content with this short code  
 
-```
-{{% private %}}
+
+{% private %}
 Write private content here
-{{% /private %}}
-```
+{% /private %}
+
+When using for inspection, please add "{}" so that you can see the notation of shortcode
 
 ## Private Content Demo
 

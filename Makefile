@@ -26,9 +26,9 @@ build-rtl:
 	$(call build_less,$(LESS_RTL_FILE),$(CSS_RTL_FILE))
 
 demo: build
-	mkdir -p demo/themes/coder
+	mkdir -p demo/themes/coder-portfolio
 	rsync -av exampleSite/* demo
-	rsync -av --exclude='demo' --exclude='exampleSite' --exclude='.git' . demo/themes/coder
+	rsync -av --exclude='demo' --exclude='exampleSite' --exclude='.git' . demo/themes/coder-portfolio
 	cd demo && hugo serve -D
 
 clean:

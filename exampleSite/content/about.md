@@ -4,10 +4,11 @@ slug = "about"
 +++
 
 ---------------------------
-This theme is created based on "hugo-coder".
-I made it possible to tell myself more by my change.  
+This theme is created based on "hugo-coder".  
+I made it possible to tell yourself more by my change.   
 Please see "FeaturesOfCoderPortfolio" in the post about the change.
-Regarding other demo contents, it is hugo-coder's thing.
+Regarding other demo contents, it is hugo-coder's thing.  
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/naro143/hugo-coder-portfolio/issues/new) or [ask me on Twitter](https://twitter.com/naro143).
 
 ---------------------------
 
