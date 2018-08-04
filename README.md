@@ -27,8 +27,8 @@ Add the following lines to your `config.toml`.
 
 ```toml
 baseurl = "http://www.example.com" # Hostname (and path) to the root.
-title = "johndoe" # Site title.
-theme = "coder" # Set the theme.
+title = "Yusuke Ishimi" # Site title.
+theme = "coder-portfolio" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
 
