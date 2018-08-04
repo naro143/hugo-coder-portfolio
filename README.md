@@ -1,19 +1,24 @@
-![Hugo Coder Logotype](https://github.com/luizdepra/hugo-coder/blob/master/images/logos/logotype-a.png)
+---------------------------
+This theme is created based on [hugo-coder](https://github.com/luizdepra/hugo-coder).  
+I made it possible to tell yourself more by my change.   
+Please see "FeaturesOfCoderPortfolio" in the post about the change.
+Regarding other demo contents, it is hugo-coder's thing.  
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/naro143/hugo-coder-portfolio/issues/new) or [ask me on Twitter](https://twitter.com/naro143).
+
+---------------------------
 
 A simple and clean blog theme for Hugo.
 
-![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
-
 ## How to use this theme
 
-To use `hugo-coder` go through the following steps.
+To use `hugo-coder-portfolio` go through the following steps.
 
 ### Download
 
 Clone this repository into your Hugo project.
 
 ```
-git clone https://github.com/luizdepra/hugo-coder.git themes/coder
+git clone https://github.com/naro143/hugo-coder-portfolio themes/coder-portfolio
 ```
 
 ### Configuration
@@ -33,17 +38,20 @@ canonifyurls = true # Enable to turn relative URLs into absolute.
 pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
 pygmentscodefences = true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = true # new add
 
 disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 [params] # theme parameters
-    author = "John Doe" # Author's name.
-    info = "Full Stack DevOps and Magician" # Author's job title or info.
-    description = "John Doe's personal website" # Site description.
+    author = "Yusuke Ishimi" # Author's name.
+    info = "WEB AND APPS ENGINEER" # Author's job title or info.
+    description = "Yusuke Ishimi's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Enter a text here." # Add footer content
+    fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
+    fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
@@ -52,8 +60,15 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     # Custom CSS
     custom_css = []
 
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
     # RTL support
     rtl = false
+
+    snsShare = true # new add
+
+    thumbnail = "images/tn.png" # default sns thumbnail
 
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
@@ -62,15 +77,15 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 [[params.social]]
     name = "Github"
     weight = 1
-    url = "https://github.com/johndoe/"
+    url = "https://github.com/naro143/"
 [[params.social]]
     name = "Twitter"
     weight = 2
-    url = "https://twitter.com/johndoe/"
+    url = "https://twitter.com/naro143/"
 [[params.social]]
     name = "LinkedIn"
     weight = 3
-    url = "https://www.linkedin.com/in/johndoe/"
+    url = "https://www.linkedin.com/in/naro143/"
 
 # Menu links
 [[menu.main]]
@@ -83,7 +98,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     url = "/about/"
 ```
 
-You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
+You can look at full working [`config.toml`](https://github.com/naro143/hugo-coder-portfolio/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/naro143/hugo-coder-portfolio/tree/master/exampleSite) folder.
 
 #### Multilingual mode
 
@@ -97,13 +112,13 @@ Each `language` section overrides default site's parameters when that language i
 [languages]
     [languages.en]
         languagename = "English" # The language name to be displayed in the selector.
-        title = "John Doe"
+        title = "Yusuke Ishimi"
 
         # You can configure the theme parameter for each language. 
         [languages.en.params]
-        author = "John Doe"
-        info = "Full Stack DevOps and Magician"
-        description = "John Doe's personal website"
+        author = "Yusuke Ishimi"
+        info = "WEB AND APPS ENGINEER"
+        description = "Yusuke Ishimi's personal website"
         keywords = "blog,developer,personal"
 
         [languages.en.menu] # It is possible to change the menu too.
@@ -119,27 +134,27 @@ Each `language` section overrides default site's parameters when that language i
         url = "/posts/"
 
 
-    [languages.pl]
-        languagename = "Polski"
-        title = "John Doe po polsku"
+    [languages.ja]
+        languagename = "Japanese"
+        title = "石見 優丞"
 
-        [languages.pl.params]
-            author = "John Doe"
-            description = "Strona domowa John'a Doe"
-            keywords = "blog,developer,strona domowa"
-            info = "Full Stack DevOps i Magik"
+        [languages.ja.params]
+            author = "石見 優丞"
+            description = "石見 優丞のサイト"
+            keywords = "blog,developer, ブログ, エンジニア"
+            info = "WEBとアプリのエンジニア"
 
-        [languages.pl.menu]
+        [languages.ja.menu]
 
-            [[languages.pl.menu.main]]
-            name = "O mnie"
+            [[languages.ja.menu.main]]
+            name = "石見とは"
             weight = 1.0
-            url = "/pl/about/"
+            url = "/ja/about/"
 
-            [[languages.pl.menu.main]]
-            name = "Blog"
+            [[languages.ja.menu.main]]
+            name = "ブログ"
             weight = 2.0
-            url = "/pl/posts/"
+            url = "/ja/posts/"
 
 
 ```
@@ -180,31 +195,14 @@ You can disable comments for a post by adding the following to your page meta da
 
 ## License
 
-Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
+Coder is licensed under the [MIT license](https://github.com/naro143/hugo-coder-portfolio/blob/master/LICENSE.md).
 
 ## Author
 
-[Luiz de Prá](https://github.com/luizdepra)
+[Yusuke Ishimi](https://github.com/naro143)
 
 ## Contributors
 
-- [Gabor Nagy](https://github.com/Aigeruth)
-- [Ihor Dvoretskyi](https://github.com/idvoretskyi)
-- [Jan Baudisch](https://github.com/flyingP0tat0)
-- [Jiri Hubacek](https://github.com/qeef)
-- [Khosrow Moossavi](https://github.com/khos2ow)
-- [Maikel](https://github.com/mbollemeijer)
-- [peterrus](https://github.com/peterrus)
-- [Ralf Junghanns](https://github.com/rabbl)
-- [tobaloidee](https://github.com/Tobaloidee)
-- [Vlad Ionescu](https://github.com/Vlaaaaaaad)
-- [Niels Reijn](https://github.com/reijnn)
-- [Harry Khanna](https://github.com/hkhanna)
-- [rdhox](https://rdhox.io)
-- [Chip Senkbeil](https://github.com/chipsenkbeil)
-- [Tomasz Wąsiński](https://github.com/wasinski)
-
 ## Special Thanks
 
-- Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
 - All contributors, for every PR and Issue reported.
