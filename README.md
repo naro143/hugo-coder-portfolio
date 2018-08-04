@@ -9,6 +9,8 @@ Have questions or suggestions? Feel free to [open an issue on GitHub](https://gi
 
 A simple and clean blog theme for Hugo.
 
+![](https://github.com/naro143/hugo-coder-portfolio/blob/master/images/screenshot.png)
+
 ## How to use this theme
 
 To use `hugo-coder-portfolio` go through the following steps.
