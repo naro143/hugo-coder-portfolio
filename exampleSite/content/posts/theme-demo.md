@@ -77,10 +77,11 @@ console.log(foo(5));
 
 You can create private content with this short code  
 
-
-{% private %}
-Write private content here
-{% /private %}
+```
+{% private %}  
+Write private content here  
+{% /private %}  
+```
 
 When using for inspection, please add "{}" so that you can see the notation of shortcode
 
@@ -89,7 +90,23 @@ When using for inspection, please add "{}" so that you can see the notation of s
 Please click on fixed bottom bar 'Click'  
 private content is displayed here  
 
-{{% private %}}
+{{% private %}}  
 ## Private Content
 This is private content
-{{% /private %}}
+{{% /private %}}  
+
+## Portfolio Content
+
+You can create portfolio content with this short code  
+
+```
+{% portfolio image="/images/tn.png" alt="Coder Portfolio" %}  
+Write portfolio content here  
+{% /portfolio %}  
+```
+
+When using for inspection, please add "{}" so that you can see the notation of shortcode
+
+## Portfolio Content Demo
+
+Please see "projects" for demo.  

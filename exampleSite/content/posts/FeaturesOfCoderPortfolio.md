@@ -29,3 +29,9 @@ This color scheme is gentle and wonderful.
 ### I shadowed Navigation.
 
 I made the boundary clearer.
+
+### "portfolio" short code added.
+
+It is now possible to communicate your portfolio.  
+You can use it easily.  
+Please see "theme-demo" for details and demo.  

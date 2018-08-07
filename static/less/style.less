@@ -472,6 +472,18 @@ a:hover:before, a:hover:after {
   display: table-cell;
 }
 
+.portfolio .portfolio-inner {
+  display: flex;
+  align-items: stretch;
+}
+.portfolio .portfolio-inner .portfolio-image {
+  margin-right: 5%;
+  width: 45%;
+}
+.portfolio .portfolio-inner .portfolio-content {
+  flex: 1;
+}
+
 #privateTrigger {
   cursor: pointer;
 }
@@ -551,6 +563,12 @@ code {
     display: flex;
     position: relative;
     justify-content: space-around;
+    width: 100%;
+  }
+  .portfolio .portfolio-inner {
+    display: block;
+  }
+  .portfolio .portfolio-inner .portfolio-image {
     width: 100%;
   }
 }
