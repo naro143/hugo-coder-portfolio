@@ -4,8 +4,8 @@
       <div class="sns-shares sp-sns-shares">
         <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer={{ .Permalink }}&ref_src=twsrc%5Etfw&text={{ .Title }} {{ .Site.Title }}&tw_p=tweetbutton&url={{ .Permalink }}"><i class="fab fa-twitter"></i></a>
         <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u={{ .Permalink }}" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
-        <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/{{ .Permalink }}"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><img src="images/hatena_icon.png"></a>
-        <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><img src="images/line.png"></a>
+        <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/{{ .Permalink }}"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><i class="fas fa-bookmark"></i></a>
+        <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><i class="fab fa-line"></i></a>
       </div>
     {{ end }}
     {{ with .Site.Params.footercontent }}
@@ -24,8 +24,8 @@
       <div class="sns-shares pc-sns-shares">
         <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer={{ .Permalink }}&ref_src=twsrc%5Etfw&text={{ .Title }} {{ .Site.Title }}&tw_p=tweetbutton&url={{ .Permalink }}"><i class="fab fa-twitter"></i></a>
         <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u={{ .Permalink }}" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
-        <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/{{ .Permalink }}"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><img src="images/hatena_icon.png"></a>
-        <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><img src="images/line.png"></a>
+        <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/{{ .Permalink }}"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><i class="fas fa-bookmark"></i></a>
+        <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><i class="fab fa-line"></i></a>
        </div>
     {{ end }}
   </section>
