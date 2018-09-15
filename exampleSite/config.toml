@@ -6,7 +6,6 @@ theme = "coder-portfolio"
 languagecode = "en"
 
 paginate = 20
-canonifyurls = true
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
@@ -59,19 +58,19 @@ disqusShortname = "yourdiscussshortname"
 [[menu.main]]
     name = "Blog"
     weight = 1
-    url  = "/posts/"
+    url  = "posts"
 [[menu.main]]
     name = "About"
     weight = 2
-    url = "/about/"
+    url = "about"
 [[menu.main]]
     name = "Projects"
     weight = 3
-    url = "/projects/"
+    url = "projects"
 [[menu.main]]
     name = "Contact me"
     weight = 5
-    url = "/contact/"
+    url = "contact"
 
 [languages]
     [languages.en]
@@ -90,21 +89,21 @@ disqusShortname = "yourdiscussshortname"
         [[languages.en.menu.main]]
         name = "About"
         weight = 1.0
-        url = "/about/"
+        url = "about"
 
         [[languages.en.menu.main]]
         name = "Blog"
         weight = 2.0
-        url = "/posts/"
+        url = "posts"
 
         [[languages.en.menu.main]]
         name = "Projects"
         weight = 3
-        url = "/projects/"
+        url = "projects"
         [[languages.en.menu.main]]
         name = "Contact me"
         weight = 5
-        url = "/contact/"
+        url = "contact"
 
 
     [languages.ja]
@@ -121,16 +120,16 @@ disqusShortname = "yourdiscussshortname"
             [[languages.ja.menu.main]]
             name = "石見とは"
             weight = 1.0
-            url = "/ja/about/"
+            url = "ja/about"
             [[languages.ja.menu.main]]
             name = "ブログ"
             weight = 2.0
-            url = "/ja/posts/"
+            url = "ja/posts"
             [[languages.ja.menu.main]]
             name = "プロジェクト"
             weight = 3
-            url = "/ja/projects/"
+            url = "ja/projects"
             [[languages.ja.menu.main]]
             name = "お問い合わせ"
             weight = 5
-            url = "/ja/contact/"
+            url = "ja/contact"
