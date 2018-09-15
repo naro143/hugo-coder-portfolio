@@ -34,7 +34,6 @@ languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
-canonifyurls = true # Enable to turn relative URLs into absolute.
 
 pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
 pygmentscodefences = true # Enable code fence background highlighting.
@@ -92,11 +91,11 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 [[menu.main]]
     name = "Blog"
     weight = 1
-    url  = "/posts/"
+    url  = "posts"
 [[menu.main]]
     name = "About"
     weight = 2
-    url = "/about/"
+    url = "about"
 ```
 
 You can look at full working [`config.toml`](https://github.com/naro143/hugo-coder-portfolio/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/naro143/hugo-coder-portfolio/tree/master/exampleSite) folder.
@@ -127,12 +126,12 @@ Each `language` section overrides default site's parameters when that language i
         [[languages.en.menu.main]]
         name = "About"
         weight = 1.0
-        url = "/about/"
+        url = "about"
 
         [[languages.en.menu.main]]
         name = "Blog"
         weight = 2.0
-        url = "/posts/"
+        url = "posts"
 
 
     [languages.ja]
@@ -150,12 +149,12 @@ Each `language` section overrides default site's parameters when that language i
             [[languages.ja.menu.main]]
             name = "石見とは"
             weight = 1.0
-            url = "/ja/about/"
+            url = "ja/about"
 
             [[languages.ja.menu.main]]
             name = "ブログ"
             weight = 2.0
-            url = "/ja/posts/"
+            url = "ja/posts"
 
 
 ```
