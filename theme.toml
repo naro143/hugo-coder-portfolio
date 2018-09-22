@@ -24,3 +24,8 @@ min_version = "0.32"
 [author]
   name = "Yusuke Ishimi"
   homepage = "https://naro143.github.io"
+
+[original]
+  author = "Luiz F. A. de Prá"
+  homepage = "https://luizdepra.com"
+  repo = "https://github.com/luizdepra/hugo-coder"
