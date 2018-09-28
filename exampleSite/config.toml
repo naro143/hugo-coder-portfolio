@@ -3,7 +3,7 @@ title = "Yusuke Ishimi"
 
 theme = "coder-portfolio"
 
-languagecode = "en"
+DefaultContentLanguage = "en"
 
 paginate = 20
 
@@ -55,58 +55,43 @@ disqusShortname = "yourdiscussshortname"
     weight = 3
     url = "https://www.linkedin.com/in/naro143/"
 
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "posts"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "about"
-[[menu.main]]
-    name = "Projects"
-    weight = 3
-    url = "projects"
-[[menu.main]]
-    name = "Contact me"
-    weight = 5
-    url = "contact"
-
 [languages]
     [languages.en]
+        languagecode = "en"
         languagename = "English" # The language name to be displayed in the selector.
         title = "Yusuke Ishimi"
 
         # You can configure the theme parameter for each language.
         [languages.en.params]
-        author = "Yusuke Ishimi"
-        info = "WEB AND APPS ENGINEER"
-        description = "Yusuke Ishimi's personal website"
-        keywords = "blog,developer,personal"
+            author = "Yusuke Ishimi"
+            info = "WEB AND APPS ENGINEER"
+            description = "Yusuke Ishimi's personal website"
+            keywords = "blog,developer,personal"
 
         [languages.en.menu] # It is possible to change the menu too.
 
-        [[languages.en.menu.main]]
-        name = "About"
-        weight = 1.0
-        url = "about"
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1.0
+                url = "about"
 
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2.0
-        url = "posts"
+            [[languages.en.menu.main]]
+                name = "Blog"
+                weight = 2.0
+                url = "posts"
 
-        [[languages.en.menu.main]]
-        name = "Projects"
-        weight = 3
-        url = "projects"
-        [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 5
-        url = "contact"
+            [[languages.en.menu.main]]
+                name = "Projects"
+                weight = 3
+                url = "projects"
+            [[languages.en.menu.main]]
+                name = "Contact me"
+                weight = 5
+                url = "contact"
 
 
     [languages.ja]
+        languagecode = "ja"
         languagename = "Japanese"
         title = "石見 優丞"
 
@@ -118,18 +103,18 @@ disqusShortname = "yourdiscussshortname"
 
         [languages.ja.menu]
             [[languages.ja.menu.main]]
-            name = "石見とは"
-            weight = 1.0
-            url = "ja/about"
+                name = "テーマについて"
+                weight = 1.0
+                url = "ja/about"
             [[languages.ja.menu.main]]
-            name = "ブログ"
-            weight = 2.0
-            url = "ja/posts"
+                name = "ブログ"
+                weight = 2.0
+                url = "ja/posts"
             [[languages.ja.menu.main]]
-            name = "プロジェクト"
-            weight = 3
-            url = "ja/projects"
+                name = "プロジェクト"
+                weight = 3
+                url = "ja/projects"
             [[languages.ja.menu.main]]
-            name = "お問い合わせ"
-            weight = 5
-            url = "ja/contact"
+                name = "お問い合わせ"
+                weight = 5
+                url = "ja/contact"
