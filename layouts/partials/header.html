@@ -1,8 +1,6 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ print "/" | relLangURL }}">
-      {{ .Site.Title }}
-    </a>
+    <a class="navigation-title" href="{{ print "/" | relLangURL }}">{{ .Site.Title }}</a>
     <input type="checkbox" id="menu-control"/>
     <label class="menu-mobile {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}" for="menu-control">
       <span class="btn-mobile {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">&#9776;</span>
