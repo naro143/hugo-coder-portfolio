@@ -46,7 +46,7 @@
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
 
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
