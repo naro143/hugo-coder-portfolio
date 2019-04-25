@@ -1,3 +1,4 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
 {{ if .IsNamedParams }}
   {{ $.Scratch.Add "image" ( .Get "image") }}
   {{ $.Scratch.Add "alt" ( .Get "alt") }}
