@@ -66,7 +66,14 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     # RTL support
     rtl = false
 
+    # Bottom sns share
     snsShare = true # new add
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = true  # new add
+    enableFacebookShare = true # new add
+    enableHatenaShare = true   # new add
+    enableLineShare = true     # new add
 
     thumbnail = "images/tn.png" # default sns thumbnail
 
