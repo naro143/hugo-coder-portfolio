@@ -8,7 +8,7 @@
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ if .IsPage }}{{ .Site.BaseURL }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
-    
+
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:title" content="{{ block "og-title" . }}{{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ if .IsPage }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
@@ -23,7 +23,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
     <link rel="canonical" href="{{ .Permalink }}">
-    {{ if .Site.Params.snsShare }}
+    {{ if or (.Site.Params.snsShare) (.Site.Params.faIcons) }}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     {{ end }}
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
