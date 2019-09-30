@@ -83,15 +83,23 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 # Social links
 [[params.social]]
     name = "Github"
+    icon = "fab fa-github"
     weight = 1
     url = "https://github.com/naro143/"
 [[params.social]]
     name = "Twitter"
+    icon = "fab fa-twitter"
     weight = 2
     url = "https://twitter.com/naro143/"
 [[params.social]]
     name = "LinkedIn"
+    icon = "fab fa-linkedin"
     weight = 3
+    url = "https://www.linkedin.com/in/naro143/"
+[[params.social]]
+    # If icon is not set, Text is displayed.
+    name = "LinkedIn"
+    weight = 4
     url = "https://www.linkedin.com/in/naro143/"
 
 # Menu links

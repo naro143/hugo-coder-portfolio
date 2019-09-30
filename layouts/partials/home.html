@@ -6,19 +6,17 @@
     <h1>{{ .Site.Params.author }}</h1>
     <h2>{{ .Site.Params.info }}</h2>
     {{ with .Site.Params.social }}
-    <ul>
-      {{ range sort .}}
-        {{ if .icon }}
-           <li>
-             <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>
-               <i class="{{ .icon }}" aria-hidden="true"></i>
-             </a>
-           </li>
-         {{ else }}
-           <li>
-             <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>{{ .name }}</a>
-           </li>
-         {{ end }}
+    <ul class="social-list">
+      {{ range sort . "weight"}}
+        <li class="social-item">
+          <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>
+            {{ if .icon }}
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            {{ else }}
+              {{ .name }}
+            {{ end }}
+          </a>
+        </li>
       {{ end }}
     </ul>
     {{ end }}
