@@ -35,6 +35,7 @@ disqusShortname = "yourdiscussshortname"
     enableFacebookShare = true
     enableHatenaShare = true
     enableLineShare = true
+    enableLinkedInShare = true
 
     thumbnail = "images/tn.png"
 

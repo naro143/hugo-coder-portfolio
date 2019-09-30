@@ -74,6 +74,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     enableFacebookShare = true # new add
     enableHatenaShare = true   # new add
     enableLineShare = true     # new add
+    enableLinkedInShare = true # new add
 
     thumbnail = "images/tn.png" # default sns thumbnail
 
