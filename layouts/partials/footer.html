@@ -14,6 +14,9 @@
         {{ if .Site.Params.enableLineShare }}
           <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><i class="fab fa-line"></i></a>
         {{ end }}
+        {{ if .Site.Params.enableLinkedInShare }}
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"><i class="fab fa-linkedin"></i></a>
+        {{ end }}
       </div>
     {{ end }}
     {{ with .Site.Params.footercontent }}
@@ -41,6 +44,9 @@
         {{ end }}
         {{ if .Site.Params.enableLineShare }}
           <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><i class="fab fa-line"></i></a>
+        {{ end }}
+        {{ if .Site.Params.enableLinkedInShare }}
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"><i class="fab fa-linkedin"></i></a>
         {{ end }}
       </div>
     {{ end }}
