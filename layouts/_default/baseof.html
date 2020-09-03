@@ -27,19 +27,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     {{ end }}
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="{{ "/css/normalize.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "/css/style.min.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/normalize.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/style.min.css" | relURL }}">
 
     {{ if .Site.Params.rtl}}
-      <link rel="stylesheet" href="{{ "/css/style-rtl.min.css" | absURL }}">
+      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | relURL }}">
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
 
-    <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ "images/favicon-32x32.png" | relURL }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ "images/favicon-16x16.png" | relURL }}" sizes="16x16">
 
     {{ with .Site.Home.AlternativeOutputFormats.Get "RSS" }}
       <link rel="alternate" href="{{ .Permalink }}" type="application/rss+xml" title="{{ $.Site.Title | plainify }}">
@@ -63,7 +63,7 @@
 
     {{ template "_internal/google_analytics.html" . }}
 
-  <script src="{{ "js/app.js" | absURL }}"></script>
+  <script src="{{ "js/app.js" | relURL }}"></script>
   {{ with .Site.Params.fixedbarContentAfter }}
   <script>
   (function($) {
