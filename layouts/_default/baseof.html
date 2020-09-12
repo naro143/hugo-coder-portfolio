@@ -27,8 +27,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     {{ end }}
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="{{ "css/normalize.min.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | relURL }}">
+
+    {{ if .Site.Params.useLessNotMinCSS }}
+      <link rel="stylesheet/less" type="text/css" href="{{ "less/normalize.less" | relURL }}">
+      <link rel="stylesheet/less" type="text/css" href="{{ "less/style.less" | relURL }}">
+      {{ else }}
+        <link rel="stylesheet" href="{{ "css/normalize.min.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/style.min.css" | relURL }}">
+    {{ end }}
+    
 
     {{ if .Site.Params.rtl}}
       <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | relURL }}">
@@ -76,5 +83,11 @@
    })(jQuery);
   </script>
   {{ end }}
+
+  <!-- Less CDN for development only -->
+    {{ if .Site.Params.useLessNotMinCSS }}
+      <script src="//cdn.jsdelivr.net/npm/less" ></script>
+    {{ end }}
+  
   </body>
 </html>
