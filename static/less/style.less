@@ -15,13 +15,13 @@ body {
   color: @fg-color;
   background-color: @bg-color;
   font-family: 'Fira Mono', monospace;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 400;
   letter-spacing: 0.0625em;
   line-height: 1.8em;
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    font-size: 1.5em;
-    line-height: 1.6em;
+    font-size: 1.3em;
+    line-height: 1.4em;
   }
 }
 
@@ -166,6 +166,7 @@ img {
 
 .wrapper {
   display: flex;
+  background-color:@darker-bg-color;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
@@ -294,7 +295,6 @@ img {
 
 .content {
   flex: 0;
-  background-color: #8bdf4c;
   margin-top: 0rem;
   margin-bottom: 3.2rem;
   article {
@@ -513,6 +513,16 @@ a:hover:before, a:hover:after {
   flex: 1;
 }
 
+.post {
+  background-color: @bg-color;
+  padding: 1rem;
+}
+
+.page {
+  background-color: @bg-color;
+  padding: 1rem;
+}
+
 #privateTrigger {
   cursor: pointer;
 }
@@ -523,6 +533,7 @@ a:hover:before, a:hover:after {
 
 .navigation {
   height: auto;
+  background-color: @bg-color;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
