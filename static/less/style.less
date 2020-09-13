@@ -8,7 +8,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
   letter-spacing: 0.0625em;
   line-height: 1.8em;
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1.6em;
   }
 }
@@ -173,11 +172,11 @@ img {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 120.0rem;
-  width: 100%;
-  padding-left: 2.0rem;
-  padding-right: 2.0rem;
+  @media (min-width: 920px) {
+    margin-left: auto;
+    margin-right:auto;
+    width: 800px;
+  }
 }
 
 .navigation {
@@ -296,7 +295,7 @@ img {
 .content {
   flex: 0;
   background-color: #8bdf4c;
-  margin-top: 1.6rem;
+  margin-top: 0rem;
   margin-bottom: 3.2rem;
   article {
     header {
@@ -381,6 +380,8 @@ img {
   align-items: center;
   justify-content: center;
   .about {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     text-align: center;
     h1 {
       margin-top: 2.0rem;
@@ -510,13 +511,6 @@ a:hover:before, a:hover:after {
 
 .portfolio .portfolio-inner .portfolio-content {
   flex: 1;
-}
-
-.post {
-  background-color:white;
-  margin-left: auto;
-  margin-right: auto;
-  width:50%;
 }
 
 #privateTrigger {
