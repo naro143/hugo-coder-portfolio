@@ -19,36 +19,13 @@
         {{ end }}
       </div>
     {{ end }}
-    {{ with .Site.Params.footercontent }}
-      <p>{{.}}</p>
+    {{ if not .Site.Params.hideCopyright }}
+      <p>© DeVilbiss Web Services, LLC | {{ .Site.LastChange.Format "2006" }}</p>
     {{ end }}
-    {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }} {{ end }} {{ if not .Site.Params.hideCredits}} {{ if not .Site.Params.hideCopyright }} · {{ end }} Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/naro143/hugo-coder-portfolio">CoderPortfolio</a>. {{ end }}
-
+    {{ if not .Site.Params.hideCredits}}
+    <p>
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/naro143/hugo-coder-portfolio">CoderPortfolio</a>.
+    </p>
+    {{ end }}
   </section>
 </footer>
-<div class="fixed-bar">
-  <section class="container">
-    {{ with .Site.Params.fixedbarContent }}
-      <p id="privateTriggerText">{{.}}<a id="privateTrigger">Click!</a></p>
-    {{ end }}
-    {{ if .Site.Params.snsShare }}
-      <div class="sns-shares pc-sns-shares">
-        {{ if .Site.Params.enableTwitterShare }}
-          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer={{ .Permalink }}&ref_src=twsrc%5Etfw&text={{ .Title }} {{ .Site.Title }}&tw_p=tweetbutton&url={{ .Permalink }}"><i class="fab fa-twitter"></i></a>
-        {{ end }}
-        {{ if .Site.Params.enableFacebookShare }}
-          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u={{ .Permalink }}" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
-        {{ end }}
-        {{ if .Site.Params.enableHatenaShare }}
-          <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/{{ .Permalink }}"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><i class="fas fa-bookmark"></i></a>
-        {{ end }}
-        {{ if .Site.Params.enableLineShare }}
-          <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}"><i class="fab fa-line"></i></a>
-        {{ end }}
-        {{ if .Site.Params.enableLinkedInShare }}
-          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"><i class="fab fa-linkedin"></i></a>
-        {{ end }}
-      </div>
-    {{ end }}
-  </section>
-</div>
