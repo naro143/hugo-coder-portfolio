@@ -2,8 +2,8 @@
   <article>
     <header>
       <h1>{{ .Title }}</h1>
-      {{ with .Site.GetPage "privacy-policy.md"}}
-        Last Modified: {{ .Lastmod.Format "2006-01-02" }}
+      {{ if eq (.Title) ("Privacy Policy") }}
+        Last Modified: {{ .Date.Format "2006-01-02" }}
       {{end}}
     </header>
     {{ .Content }}
