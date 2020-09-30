@@ -1,5 +1,10 @@
 @import "colors.less";
 
+@border-height: 2px;
+@underline-from-left: 0%;
+@underline-from-middle: 50%;
+@underline-from-right: 100%;
+
 *,
 *:after,
 *:before {
@@ -29,11 +34,6 @@ body {
 a {
   font-weight: 700;
   color: @darker-fg-color;
-  text-decoration: none;
-  &:focus,
-  &:hover {
-    border-bottom: 2px solid @link-accent;
-  }
 }
 
 p {
@@ -43,11 +43,6 @@ p {
     color: @darker-fg-color;
     text-decoration: underline;
     text-underline-position: under;
-    &:focus,
-    &:hover {
-      color: @link-color;
-      border-bottom: 2px solid @link-accent;
-    }
   }
 }
 
@@ -459,36 +454,20 @@ img {
   font-weight: bold;
 }
 
+/**Variables @from-middle and @border-height described at the top of the document
+* Options are: @underline-from-left, @underline-from-middle, or @underline-from-right
+*/
 a {
-  position: relative;
-  transition: 0.5s;
+  background-image: linear-gradient(@border-color,@border-color);
+  background-position: @underline-from-middle 100%;
+  background-repeat: no-repeat;
+  background-size: 0 @border-height;
+  display: inline;
+  padding-bottom: @border-height;
+  transition: background-size 0.5s;
 }
-
-a:before, a:after {
-  position: absolute;
-  bottom: -2px;
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 2px;
-  background: #F30034;
-  transition: 0.5s;
-}
-
-a:before {
-  left: 50%;
-}
-
-a:after {
-  right: 50%;
-}
-
 a:hover {
-  text-decoration: none;
-}
-
-a:hover:before, a:hover:after {
-  width: 50%;
+  background-size: 100% @border-height;
 }
 
 .private {
@@ -563,7 +542,7 @@ a:hover:before, a:hover:after {
 }
 
 code {
-  background: #364549 !important;
+  background: @code-color !important;
 }
 
 .social-list {
