@@ -1,6 +1,6 @@
 @import "colors.less";
 
-@border-height: 2px;
+@border-height: 5px;
 @underline-from-left: 0%;
 @underline-from-middle: 50%;
 @underline-from-right: 100%;
@@ -20,7 +20,7 @@ body {
   display: flex;
   color: @fg-color;
   background-color: @bg-color;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   letter-spacing: 0.0625em;
@@ -32,8 +32,9 @@ body {
 }
 
 a {
-  font-weight: 700;
   color: @darker-fg-color;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 p {
@@ -41,7 +42,7 @@ p {
   a {
     font-weight: 400;
     color: @darker-fg-color;
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-position: under;
   }
 }
@@ -181,6 +182,7 @@ img {
   height: 6.0rem;
   width: 100%;
   a {
+    background-image: linear-gradient(@nav-border-color,@nav-border-color);
     display: inline;
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -195,12 +197,13 @@ img {
     margin-bottom: 0;
     margin-top: 0;
     li {
-      float: left;
+      display: inline-block;
       margin: 0;
       position: relative;
       a {
-        margin-left: 1.0rem;
-        margin-right: 1.0rem;
+        display: inline;
+        padding-top: 1.0rem;
+        background-image: linear-gradient(@nav-border-color,@nav-border-color);
       }
       @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
         float: none !important;
@@ -310,6 +313,10 @@ img {
         }
       }
     }
+    a {
+      background-image: linear-gradient(@light-accent-color,@light-accent-color);
+      text-decoration: underline;
+    }
   }
 }
 
@@ -344,6 +351,7 @@ img {
         }
       }
       a {
+        text-decoration: none;
         text-transform: uppercase;
       }
     }
@@ -454,7 +462,7 @@ img {
   font-weight: bold;
 }
 
-/**Variables @from-middle and @border-height described at the top of the document
+/*Variables @from-middle and @border-height described at the top of the document
 * Options are: @underline-from-left, @underline-from-middle, or @underline-from-right
 */
 a {
@@ -519,9 +527,6 @@ a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.navigation-link {
-  padding: .75rem;
-}
 
 .fixed-bar {
   position: fixed;
