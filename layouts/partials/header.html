@@ -6,11 +6,13 @@
       <span class="btn-mobile {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">&#9776;</span>
       <ul class="navigation-list">
         {{ with .Site.Menus.main}}
+        <span class="space-words">
           {{ range sort . }}
             <li class="navigation-item {{ if $.Site.Params.itemscentered }} align-center {{ else }} {{ if $.Site.Params.rtl }} align-right {{ else }} align-left {{ end }} {{ end }}">
               <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
+        </span>
         {{ end }}
         {{ if .Site.IsMultiLingual }}
           {{ $node := . }}
